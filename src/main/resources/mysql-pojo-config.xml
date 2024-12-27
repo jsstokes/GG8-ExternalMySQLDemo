@@ -34,7 +34,7 @@
                                     <bean class="org.apache.ignite.cache.store.jdbc.JdbcType">
                                         <property name="cacheName" value="PersonCache"/>
                                         <property name="keyType" value="java.lang.Integer"/>
-                                        <property name="valueType" value="org.sstokes.demo.model.Person"/>
+                                        <property name="valueType" value="externalMySQL.Person"/>
                                         <!--Specify the schema if applicable -->
                                         <!--property name="databaseSchema" value="MY_DB_SCHEMA"/-->
                                         <property name="databaseTable" value="PERSON"/>
@@ -82,7 +82,7 @@
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <property name="keyType" value="java.lang.Integer"/>
-                                <property name="valueType" value="com.gridgain.pgarg.model.Person"/>
+                                <property name="valueType" value="externalMySQL.Person"/>
                                 <property name="keyFieldName" value="id"/>
                                 <property name="keyFields">
                                     <list>
