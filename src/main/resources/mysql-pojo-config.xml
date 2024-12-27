@@ -12,7 +12,8 @@
     <bean class="com.mysql.cj.jdbc.MysqlDataSource" id="mysqlDataSource">
         <property name="URL" value="jdbc:mysql://localhost:3306/STOKES"/>
         <property name="user" value="root"/>
-        <property name="password" value="Passw0rd"/>
+       <!-- Make sure to update the MySQL Username and password -->
+        <property name="password" value="xxxxxxxxx"/>
     </bean>
     <!-- Ignite Configuration -->
     <bean class="org.apache.ignite.configuration.IgniteConfiguration">
